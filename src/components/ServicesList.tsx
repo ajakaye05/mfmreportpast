@@ -141,16 +141,26 @@ export const ServicesList: React.FC<ServicesListProps> = ({ services, onDeleteSe
             <p className="text-xs text-slate-400 mt-0.5">Manage, search, and edit recorded service entries</p>
           </div>
 
-          {/* Search Input Box */}
-          <div className="relative w-full sm:w-72">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Search preacher, theme..."
-              className="w-full pl-10 pr-4 py-2 rounded-xl glass-input text-xs transition-all duration-200"
-            />
+          {/* Search Input Box & Add Service CTA */}
+          <div className="flex items-center gap-3 w-full sm:w-auto">
+            <div className="relative flex-1 sm:w-72">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search preacher, theme..."
+                className="w-full pl-10 pr-4 py-2 rounded-xl glass-input text-xs transition-all duration-200"
+              />
+            </div>
+
+            <Link
+              to="/add-service"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold text-xs shadow-md shadow-indigo-500/25 border border-indigo-400/30 whitespace-nowrap transition-all duration-200"
+            >
+              <Plus className="w-4 h-4" />
+              <span>+ New service</span>
+            </Link>
           </div>
         </div>
 

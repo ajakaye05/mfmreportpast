@@ -28,13 +28,10 @@ export const PrintableReport: React.FC<PrintableReportProps> = ({ report }) => {
         
         <div className="text-center flex-1 px-2">
           <h1 className="text-base font-bold text-[#003366] tracking-wide uppercase">
-            MOUNTAIN OF FIRE AND MIRACLES MINISTRIES (MFM)
+            Mfm Central Africa Mega region 3
           </h1>
           <p className="text-xs font-bold text-gray-800 uppercase mt-0.5">
-            CHAGOUA N'DJAMENA, CHAD
-          </p>
-          <p className="text-xs font-semibold text-gray-700">
-            Tel: +23565871836
+            Omnisport Yaoundé, Cameroon
           </p>
           <h2 className="text-sm font-bold text-gray-900 mt-2">
             Monthly Activity Report - {report.month} {report.year}

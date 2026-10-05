@@ -69,7 +69,7 @@ const LoginForm: React.FC = () => {
               Welcome Back
             </h2>
             <p className="text-slate-400 text-sm mt-1">
-              Sign in to manage church services & reports
+              Mfm Central Africa Mega region 3 • Omnisport Yaoundé, Cameroon
             </p>
           </div>
 
@@ -94,7 +94,7 @@ const LoginForm: React.FC = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="victorpelumi003@gmail.com"
+                placeholder="name@example.com"
                 className="w-full pl-10 pr-4 py-3 rounded-xl glass-input text-sm transition-all duration-200"
               />
             </div>
@@ -151,7 +151,7 @@ const LoginForm: React.FC = () => {
 
         {/* Footer info */}
         <p className="text-center text-xs text-slate-500 mt-6">
-          Mountain of Fire and Miracles Ministries &copy; {new Date().getFullYear()}
+          Mfm Central Africa Mega region 3 &copy; {new Date().getFullYear()}
         </p>
       </div>
     </div>

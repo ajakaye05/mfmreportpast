@@ -108,7 +108,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({ services, onEditServic
                 className="flex items-center justify-center gap-1.5 px-3 py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-semibold text-xs border border-white/10 shadow transition-all"
               >
                 <Printer className="w-3.5 h-3.5 text-slate-300" />
-                <span>Imprimer</span>
+                <span>Print</span>
               </button>
               
               <button

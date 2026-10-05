@@ -52,17 +52,16 @@ export const exportToPDF = async (report: MonthlyReport, filename: string) => {
 
     // Church header text - all using helvetica for consistency
     pdf.setFont('helvetica', 'bold');
-    pdf.setFontSize(14);
-    pdf.text('MOUNTAIN OF FIRE AND MIRACLES MINISTRIES (MFM)', pageWidth / 2, margin + 8, { align: 'center' });
+    pdf.setFontSize(13);
+    pdf.text('Mfm Central Africa Mega region 3', pageWidth / 2, margin + 8, { align: 'center' });
 
     pdf.setFont('helvetica', 'bold');
     pdf.setFontSize(10);
-    pdf.text('CHAGOUA N\'DJAMENA, CHAD', pageWidth / 2, margin + 14, { align: 'center' });
-    pdf.text('Tel: +23565871836', pageWidth / 2, margin + 18, { align: 'center' });
+    pdf.text('Omnisport Yaoundé, Cameroon', pageWidth / 2, margin + 14, { align: 'center' });
 
     pdf.setFont('helvetica', 'bold');
     pdf.setFontSize(11);
-    pdf.text(`Monthly Activity Report - ${report.month} ${report.year}`, pageWidth / 2, margin + 24, { align: 'center' });
+    pdf.text(`Monthly Activity Report - ${report.month} ${report.year}`, pageWidth / 2, margin + 20, { align: 'center' });
 
     // Prepare table data
     const tableHeaders = [
@@ -99,7 +98,7 @@ export const exportToPDF = async (report: MonthlyReport, filename: string) => {
 
     // Generate table with autoTable
     pdf.autoTable({
-      startY: margin + 32,
+      startY: margin + 28,
       head: [tableHeaders],
       body: tableData,
       theme: 'grid',
@@ -192,8 +191,8 @@ export const exportToDocx = async (report: MonthlyReport) => {
   try {
     const { month, year, services } = report;
 
-    const churchName = "MOUNTAIN OF FIRE AND MIRACLES MINISTRIES (MFM)";
-    const churchAddress = "CHAGOUA N'DJAMENA, CHAD | Tel: +23565871836";
+    const churchName = "Mfm Central Africa Mega region 3";
+    const churchAddress = "Omnisport Yaoundé, Cameroon";
     const reportTitle = `Monthly Activity Report - ${month} ${year}`;
 
     // Table Headers

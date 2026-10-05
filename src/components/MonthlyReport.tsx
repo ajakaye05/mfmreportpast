@@ -17,9 +17,9 @@ interface MonthlyReportProps {
 export const MonthlyReport: React.FC<MonthlyReportProps> = ({ report, onEditService }) => {
   const reportElementId = 'monthly-report-content';
 
-  const churchName = "Eglise Evangélique les Ministères De La Montagne De Feu Et Des Miracles";
-  const churchAddress = "Siège Régional N'djamena Zema Rue Après Hôpital Américain";
-  const reportTitle = `Rapport Mensuel des Activités De ${report.month} ${report.year} (M.F.M Chagoua Tchad)`;
+  const churchName = "Mfm Central Africa Mega region 3";
+  const churchAddress = "Omnisport Yaoundé, Cameroon";
+  const reportTitle = `Rapport Mensuel des Activités De ${report.month} ${report.year} (Mfm Central Africa Mega region 3)`;
 
   const tithesPercent = report.totalIncome > 0 
     ? ((report.totalTithes / report.totalIncome) * 100).toFixed(1) 
